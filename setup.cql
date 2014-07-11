@@ -13,8 +13,8 @@ CREATE TABLE file_ledger (
 );
 
 // Secondary indexes to make some faster queries possible.
-CREATE INDEX ma01_state ON mcp.file_ledger (ma01);
-CREATE INDEX tx01_state ON mcp.file_ledger (tx01);
+CREATE INDEX ma01_state ON phylactery.file_ledger (ma01);
+CREATE INDEX tx01_state ON phylactery.file_ledger (tx01);
 
 // Sample data.
 INSERT INTO file_ledger (fid, created, origin, ma01, tx01) VALUES('1234.fid', dateof(now()), 'ma01', true, false);
