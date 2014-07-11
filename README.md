@@ -37,11 +37,10 @@ Installing via `apt-get` will start it automatically, you need not do any config
 
 Use `cqlsh` to connect to the local Cassandra instance and copy-paste from the `setup.cql` file.
 
-Assuming you have Go installed and your `GOPATH` set grab the `cocql` dependancy:
+Assuming you have Go installed and your `GOPATH` set grab the `gocql` dependancy:
 
 ```
 go get github.com/gocql/gocql
-
 ```
 
 Then, just build it
